@@ -347,12 +347,12 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
-    <None Include="Web.Dev.config">
+    <Content Include="Web.Dev.config">
       <DependentUpon>Web.config</DependentUpon>
-    </None>
-    <None Include="Web.Test.config">
+    </Content>
+    <Content Include="Web.Test.config">
       <DependentUpon>Web.config</DependentUpon>
-    </None>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
