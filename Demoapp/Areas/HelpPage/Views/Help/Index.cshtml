@@ -6,8 +6,8 @@
 @model Collection<ApiDescription>
 
 @{
-    ViewBag.Title = "ASP.NET Web API Help Page";
-    //ViewBag.Title = "Environment = " + System.Configuration.ConfigurationManager.AppSettings["Env"] ?? "";
+    //ViewBag.Title = "ASP.NET Web API Help Page";
+    ViewBag.Title = "Environment = " + System.Configuration.ConfigurationManager.AppSettings["Env"] ?? "";
 
     // Group APIs by controller
     ILookup<HttpControllerDescriptor, ApiDescription> apiGroups = Model.ToLookup(api => api.ActionDescriptor.ControllerDescriptor);
